@@ -4,7 +4,7 @@ const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/dados-g
 
 async function visualizarInformacoesGlobais() {
     const res = await fetch(url)
-    const dados = await res.json()
+    const dados = res.json()
     console.log(dados);
 }
 
